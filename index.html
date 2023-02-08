@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="calcul">
+        <h1 class="title">Calculadora</h1>
+        <p id="result" class="text"></p>
+        <table id="table">
+            <tr class="linha">
+                <td><button onclick ="clean()" class="button">C</button></td>
+                <td><button onclick="back()" class="button"><</button></td>
+                <td><button onclick="number('/')" class="button">/</button></td>
+                <td><button onclick="number('*')" class="button">X</button></td>
+            </tr>
+            <tr class="linha">
+                <td><button onclick="number('7')" class="button">7</button></td>
+                <td><button onclick="number('8')" class="button">8</button></td>
+                <td><button onclick="number('9')" class="button">9</button></td>
+                <td><button onclick="number('-')" class="button">-</button></td>
+            </tr class="linha">
+                <td><button onclick="number('4')" class="button">4</button></td>
+                <td><button onclick="number('5')" class="button">5</button></td>
+                <td><button onclick="number('6')" class="button">6</button></td>
+                <td><button onclick="number('+')" class="button">+</button></td>
+            </tr class="linha">
+                <td><button onclick="number('1')" class="button">1</button></td>
+                <td><button onclick="number('2')" class="button">2</button></td>
+                <td><button onclick="number('3')" class="button">3</button></td>
+                <td rowspan="2"><button class="button" onclick="calcule()" style="height: 102px;">=</button></td>
+            </tr class="linha">
+                <td colspan="2"><button onclick="number('0')" class="button" style="width: 102px;">0</button></td>
+                <td><button onclick="number('.')" class="button">.</button></td>
+            </tr>
+           
+        </table>
+
+    </div>
+
+    <script src="scrypt.js"> </script>
+</body>
+</html>
